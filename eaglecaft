@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Launcher</title>
+</head>
+<body>
+<script>
+var win = window.open("about:blank", "_blank");
+win.location.href = "https://takaiwebsite.neocities.org/minecraft"; // working game URL
+window.close();
+</script>
+</body>
+</html>
