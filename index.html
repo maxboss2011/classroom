@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Eaglercraft Game</title>
+    <title>Your Game</title>
     <style>
-        /* Make the game fill the entire page */
         html, body {
             margin: 0;
             padding: 0;
@@ -23,13 +22,14 @@
 <script src="classes.js"></script>
 <script>
 window.addEventListener("load", function() {
+    // Game options for Eaglercraft
     window.minecraftOpts = [
         "game_frame","assets.epk",
         "CgAACQAHc2VydmVycwoAAAABCAACaXAAJHdzczovL2cuZWFncy51cy9lYWdsZXJjcmFmdC9jcmVhdGl2ZQgABG5hbWUAFGVhZ2xlcmNyYWZ0IGNyZWF0aXZlAQALaGlkZUFkZHJlc3MACAAKZm9yY2VkTU9URAAhdGhpcyBpcyBtZWFudCB0byBiZSBhIGRlbW8gc2VydmVyAAA="
     ];
     main();
 
-    // Optional: request fullscreen automatically
+    // Request fullscreen
     const elem = document.getElementById('game_frame');
     if (elem.requestFullscreen) elem.requestFullscreen();
 });
