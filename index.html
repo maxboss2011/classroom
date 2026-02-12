@@ -1,37 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Your Game</title>
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            background: black;
-        }
-        #game_frame {
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Play Minecraft</title>
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+    }
+    #game_frame { width: 100%; height: 100%; }
+  </style>
 </head>
 <body id="game_frame">
 <script src="classes.js"></script>
 <script>
 window.addEventListener("load", function() {
-    // Game options for Eaglercraft
-    window.minecraftOpts = [
-        "game_frame","assets.epk",
-        "CgAACQAHc2VydmVycwoAAAABCAACaXAAJHdzczovL2cuZWFncy51cy9lYWdsZXJjcmFmdC9jcmVhdGl2ZQgABG5hbWUAFGVhZ2xlcmNyYWZ0IGNyZWF0aXZlAQALaGlkZUFkZHJlc3MACAAKZm9yY2VkTU9URAAhdGhpcyBpcyBtZWFudCB0byBiZSBhIGRlbW8gc2VydmVyAAA="
-    ];
+    window.minecraftOpts = ["game_frame","assets.epk", ""];
     main();
-
-    // Try to go fullscreen automatically
-    const elem = document.getElementById('game_frame');
-    if (elem.requestFullscreen) elem.requestFullscreen();
 });
 </script>
 </body>
